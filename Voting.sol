@@ -50,7 +50,7 @@ event candidateDetailsOrder(string id,string name,string votecount);
 
 //Return array of candidate details
 candidate[] candidateList;
-//See
+//See candidate list
 function seeCandidateList() external returns(candidate[] memory){
 
     for(uint id=1;id<=candidateId;id++)
