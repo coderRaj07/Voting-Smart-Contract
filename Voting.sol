@@ -78,13 +78,13 @@ function vote(uint _candidateId) public validateVoter{
 function winnerTillNow() public view returns(string memory){
     string memory winner;
     uint maxi;
-
+ 
    for(uint id=1;id<=candidateId;id++){ 
        if(candidates[id].voteCount > maxi){  
        maxi=candidates[id].voteCount;
        winner=candidates[id].name;
     }}
     return winner;
-}
+ }
 
 }
